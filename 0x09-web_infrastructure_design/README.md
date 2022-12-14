@@ -41,7 +41,7 @@ Requirements:
   - Cannot scale if too much incoming traffic
 
 <p align="center">
-  <img src="https://github.com/Kingfash084412/alx-system_engineering-devops/blob/master/0x09-web_infrastructure_design/0-simple_web_stack.jpg">
+  <img src="https://user-images.githubusercontent.com/104295046/207531360-90ca6b75-0ea8-4c19-a5e8-8b592a90ee02.jpg">
 </p>
 
 ### [1. Distributed web infrastructure](./1-distributed_web_infrastructure)
