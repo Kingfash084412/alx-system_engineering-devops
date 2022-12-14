@@ -69,7 +69,7 @@ Requirements:
   - No monitoring
 
 <p align="center">
-  <img src="https://github.com/Kingfash084412/alx-system_engineering-devops/blob/master/0x09-web_infrastructure_design/1-distributed_web_infrastructure.jpg">
+  <img src="https://user-images.githubusercontent.com/104295046/207532804-b8645925-3890-4e84-8f42-f2bc16b7e4d9.jpg">
 </p>
 
 ### [2. Secured and monitored web infrastructure](./2-secured_and_monitored_web_infrastructure)
