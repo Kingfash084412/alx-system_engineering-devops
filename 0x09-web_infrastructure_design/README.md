@@ -95,7 +95,7 @@ Requirements:
   - Why having servers with all the same components (database, web server and application server) might be a problem
 
 <p align="center">
-  <img src="https://github.com/Kingfash084412/alx-system_engineering-devops/blob/master/0x09-web_infrastructure_design/2-secured_and_monitored_web_infrastructure.jpg">
+  <img src="https://user-images.githubusercontent.com/104295046/207624239-6b6d4a90-229b-40a5-a81b-8503fc3df0bc.jpg">
 </p>
 
 ### [3-scale_up](./3-scale_up)
