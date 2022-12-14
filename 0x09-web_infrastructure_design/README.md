@@ -114,6 +114,6 @@ Split components (web server, application server, database) with their own serve
 - Please, remember that everything must be written in English to further your technical ability in a variety of settings.
 
 <p align="center">
-  <img src="https://github.com/Kingfash084412/alx-system_engineering-devops/blob/master/0x09-web_infrastructure_design/3-scale_up_web_infrastructure.jpg">
+  <img src="https://user-images.githubusercontent.com/104295046/207627264-57009c82-dc7b-4507-b6f1-ddd26088303f.png">
 </p>
 
