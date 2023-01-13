@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
-# Install nginx on web server; Nginx should be listening on port 80
+# Bash script that configures a new Ubuntu machine to respect below requirements
+# Installs nginx on web-01 server and listens on port 80
+# Returns a page containing "Hello World" via curl
 
-sudo apt-get -y update
-sudo apt-get -y install nginx
-sudo ufw allow "Nginx HTTP"
-echo "Holberton School" | sudo tee /var/www/html/index.nginx-ubuntu.html
-sudo service nginx start
+apt-get -y update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+# nginx listens to port 80 by default
+echo 'Hello WOrld!' > /var/www/html/index.html
+service nginx restart
