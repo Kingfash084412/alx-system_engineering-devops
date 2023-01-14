@@ -1,6 +1,6 @@
 # 0x0A Configuration management
 
-## Learning Objectives
+## Learning Objectives;
 
 How to use Puppet
 
