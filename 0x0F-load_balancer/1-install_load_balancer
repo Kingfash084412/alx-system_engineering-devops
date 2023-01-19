@@ -16,8 +16,8 @@ frontend  ehoneah-frontend
         default_backend ehoneah-backend
 backend ehoneah-backend
         balance roundrobin
-        server 63210-web-01 100.25.19.204:80 check
-        server 63210-web-02 54.157.159.85:80 check
+        server 73999-web-01 100.26.175.113:80 check
+        server 73999-web-02 34.204.101.131:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
