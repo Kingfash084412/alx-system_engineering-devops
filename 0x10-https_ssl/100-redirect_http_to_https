@@ -38,7 +38,7 @@ frontend firstbalance
         mode http
         default_backend webservers
 frontend www-https
-        bind *:443 ssl crt /etc/haproxy/certs/www.kingfashy.tech.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.kingfashy.tech.pem
 	http-request set-header X-Forwarded-Proto https
         default_backend webservers
 backend webservers
