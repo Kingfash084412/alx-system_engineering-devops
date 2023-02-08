@@ -1,37 +1,35 @@
 #!/usr/bin/python3
 
 """
-Python script that, using a REST API, for a given employee ID,
-returns information about his/her TODO list progress.
+Python script that exports data in the CSV format
 """
 
 from requests import get
 from sys import argv
-
+import csv
 
 if __name__ == "__main__":
     response = get('https://jsonplaceholder.typicode.com/todos/')
     data = response.json()
-    completed = 0
-    total = 0
-    tasks = []
+
+    row = []
     response2 = get('https://jsonplaceholder.typicode.com/users')
     data2 = response2.json()
 
     for i in data2:
-        if i.get('id') == int(argv[1]):
-            employee = i.get('name')
+        if i['id'] == int(argv[1]):
+            employee = i['username']
 
-    for i in data:
-        if i.get('userId') == int(argv[1]):
-            total += 1
+    with open(argv[1] + '.csv', 'w', newline='') as file:
+        writ = csv.writer(file, quoting=csv.QUOTE_ALL)
 
-            if i.get('completed') is True:
-                completed += 1
-                tasks.append(i.get('title'))
+        for i in data:
 
-    print("Employee {} is done with tasks({}/{}):".format(employee, completed,
-                                                          total))
+            row = []
+            if i['userId'] == int(argv[1]):
+                row.append(i['userId'])
+                row.append(employee)
+                row.append(i['completed'])
+                row.append(i['title'])
 
-    for i in tasks:
-        print("\t {}".format(i))
+                writ.writerow(row)
