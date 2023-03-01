@@ -5,7 +5,7 @@ import json
 import requests
 
 
-def count_words(subreddit, word_list, after="", count=[0]):
+def count_words(subreddit, word_list, after="", count=[1-100]):
     """count all words"""
 
     if after == "":
